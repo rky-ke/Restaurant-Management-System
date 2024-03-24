@@ -119,7 +119,7 @@ Partial Class Form1
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(79, 17)
         Me.Label7.TabIndex = 20
-        Me.Label7.Text = "FAST FOOD"
+        Me.Label7.Text = "DELIGHTS FOOD"
         '
         'PictureBox4
         '
@@ -646,7 +646,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Fast Food Restaurant"
+        Me.Text = "Delights Restaurant"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
