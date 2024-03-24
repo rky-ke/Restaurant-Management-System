@@ -245,7 +245,7 @@ Public Class Form1
     End Sub
     Private Sub btn_Pay_Click(sender As Object, e As EventArgs) Handles btn_Pay.Click
 
-        If MsgBox("Are You Sure Order Conform ?", vbQuestion + vbYesNo) = vbYes Then
+        If MsgBox("Confirm Order?", vbQuestion + vbYesNo) = vbYes Then
             If txt_receivedAmount.Text = String.Empty Then
                 MsgBox("Please Enter Receive Amount !", vbExclamation)
                 Return
