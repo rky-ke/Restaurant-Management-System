@@ -54,7 +54,7 @@ Partial Class frm_ManageFoods
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.pic_foodimg = New Fast_Food_Restaurant.CirclePicturBox()
+        Me.pic_foodimg = New Delight_Restaurant.CirclePicturBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
@@ -477,7 +477,7 @@ Partial Class frm_ManageFoods
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
-    Friend WithEvents pic_foodimg As Fast_Food_Restaurant.CirclePicturBox
+    Friend WithEvents pic_foodimg As Delight_Restaurant.CirclePicturBox
     Friend WithEvents txt_foodcode As System.Windows.Forms.TextBox
     Friend WithEvents txt_price As System.Windows.Forms.TextBox
     Friend WithEvents txt_foodname As System.Windows.Forms.TextBox

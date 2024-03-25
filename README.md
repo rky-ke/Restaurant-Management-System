@@ -2,7 +2,7 @@
 
 This guide provides instructions for installing the necessary DLL files for using Microsoft Report Viewer WinForms and Microsoft Visual Basic Power Packs in your Visual Basic project.
 
-## Prerequisites
+# Prerequisites
 
 Before proceeding with the installation, ensure you have the following:
 

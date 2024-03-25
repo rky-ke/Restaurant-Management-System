@@ -32,6 +32,8 @@ Partial Class Form1
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lbl_date1 = New System.Windows.Forms.Label()
+        Me.lbl_time = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -45,6 +47,7 @@ Partial Class Form1
         Me.btn_Pay = New System.Windows.Forms.Button()
         Me.btn_Exit = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lbl_date = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -71,17 +74,14 @@ Partial Class Form1
         Me.lbl_TotalPrice = New System.Windows.Forms.Label()
         Me.lbl_noOfProducts = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.lbl_time = New System.Windows.Forms.Label()
-        Me.lbl_date1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -99,6 +99,30 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(1316, 61)
         Me.Panel1.TabIndex = 0
         '
+        'lbl_date1
+        '
+        Me.lbl_date1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_date1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_date1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(254, Byte), Integer))
+        Me.lbl_date1.Location = New System.Drawing.Point(1053, 25)
+        Me.lbl_date1.Name = "lbl_date1"
+        Me.lbl_date1.Size = New System.Drawing.Size(251, 31)
+        Me.lbl_date1.TabIndex = 23
+        Me.lbl_date1.Text = "00.00"
+        Me.lbl_date1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lbl_time
+        '
+        Me.lbl_time.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_time.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_time.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(8, Byte), Integer))
+        Me.lbl_time.Location = New System.Drawing.Point(1057, 0)
+        Me.lbl_time.Name = "lbl_time"
+        Me.lbl_time.Size = New System.Drawing.Size(251, 31)
+        Me.lbl_time.TabIndex = 19
+        Me.lbl_time.Text = "00.00"
+        Me.lbl_time.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -106,7 +130,7 @@ Partial Class Form1
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(189, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(78, 33)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(90, 17)
+        Me.Label8.Size = New System.Drawing.Size(141, 28)
         Me.Label8.TabIndex = 21
         Me.Label8.Text = "RESTAURANT"
         '
@@ -115,9 +139,9 @@ Partial Class Form1
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(8, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(82, 7)
+        Me.Label7.Location = New System.Drawing.Point(77, 3)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(79, 17)
+        Me.Label7.Size = New System.Drawing.Size(167, 28)
         Me.Label7.TabIndex = 20
         Me.Label7.Text = "DELIGHTS FOOD"
         '
@@ -287,6 +311,16 @@ Partial Class Form1
         Me.Panel2.Size = New System.Drawing.Size(1316, 87)
         Me.Panel2.TabIndex = 2
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(86, 48)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(28, 22)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 24
+        Me.PictureBox1.TabStop = False
+        '
         'lbl_date
         '
         Me.lbl_date.AutoSize = True
@@ -294,7 +328,7 @@ Partial Class Form1
         Me.lbl_date.ForeColor = System.Drawing.Color.White
         Me.lbl_date.Location = New System.Drawing.Point(552, 19)
         Me.lbl_date.Name = "lbl_date"
-        Me.lbl_date.Size = New System.Drawing.Size(31, 13)
+        Me.lbl_date.Size = New System.Drawing.Size(48, 23)
         Me.lbl_date.TabIndex = 18
         Me.lbl_date.Text = "Date"
         '
@@ -305,7 +339,7 @@ Partial Class Form1
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(506, 19)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.Size = New System.Drawing.Size(63, 23)
         Me.Label3.TabIndex = 17
         Me.Label3.Text = "Date : "
         '
@@ -316,7 +350,7 @@ Partial Class Form1
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(25, 17)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 13)
+        Me.Label2.Size = New System.Drawing.Size(129, 23)
         Me.Label2.TabIndex = 16
         Me.Label2.Text = "Transaction No"
         '
@@ -415,6 +449,7 @@ Partial Class Form1
         DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.Size = New System.Drawing.Size(345, 418)
         Me.DataGridView1.TabIndex = 3
         '
@@ -422,23 +457,26 @@ Partial Class Form1
         '
         Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Column1.HeaderText = "#"
+        Me.Column1.MinimumWidth = 8
         Me.Column1.Name = "Column1"
         Me.Column1.ReadOnly = True
-        Me.Column1.Width = 39
+        Me.Column1.Width = 56
         '
         'Column2
         '
         Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Column2.HeaderText = "FOOD CODE"
+        Me.Column2.MinimumWidth = 8
         Me.Column2.Name = "Column2"
         Me.Column2.ReadOnly = True
         Me.Column2.Visible = False
-        Me.Column2.Width = 94
+        Me.Column2.Width = 143
         '
         'Column3
         '
         Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.Column3.HeaderText = "FOOD NAME"
+        Me.Column3.MinimumWidth = 8
         Me.Column3.Name = "Column3"
         Me.Column3.ReadOnly = True
         '
@@ -450,9 +488,10 @@ Partial Class Form1
         DataGridViewCellStyle3.NullValue = Nothing
         Me.Column4.DefaultCellStyle = DataGridViewCellStyle3
         Me.Column4.HeaderText = "PRICE"
+        Me.Column4.MinimumWidth = 8
         Me.Column4.Name = "Column4"
         Me.Column4.ReadOnly = True
-        Me.Column4.Width = 61
+        Me.Column4.Width = 92
         '
         'Column5
         '
@@ -460,9 +499,10 @@ Partial Class Form1
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         Me.Column5.DefaultCellStyle = DataGridViewCellStyle4
         Me.Column5.HeaderText = "QTY"
+        Me.Column5.MinimumWidth = 8
         Me.Column5.Name = "Column5"
         Me.Column5.ReadOnly = True
-        Me.Column5.Width = 52
+        Me.Column5.Width = 77
         '
         'Column6
         '
@@ -471,9 +511,10 @@ Partial Class Form1
         DataGridViewCellStyle5.Format = "Kshs #,##0.00"
         Me.Column6.DefaultCellStyle = DataGridViewCellStyle5
         Me.Column6.HeaderText = "TOTAL"
+        Me.Column6.MinimumWidth = 8
         Me.Column6.Name = "Column6"
         Me.Column6.ReadOnly = True
-        Me.Column6.Width = 63
+        Me.Column6.Width = 93
         '
         'Panel4
         '
@@ -498,7 +539,7 @@ Partial Class Form1
         Me.lbl_tot.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.lbl_tot.Location = New System.Drawing.Point(6, 126)
         Me.lbl_tot.Name = "lbl_tot"
-        Me.lbl_tot.Size = New System.Drawing.Size(40, 13)
+        Me.lbl_tot.Size = New System.Drawing.Size(59, 23)
         Me.lbl_tot.TabIndex = 23
         Me.lbl_tot.Text = "Label7"
         '
@@ -509,7 +550,7 @@ Partial Class Form1
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(36, 92)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(133, 20)
+        Me.Label5.Size = New System.Drawing.Size(226, 30)
         Me.Label5.TabIndex = 22
         Me.Label5.Text = "Balance Amount Kshs"
         '
@@ -520,7 +561,7 @@ Partial Class Form1
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(28, 52)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(141, 20)
+        Me.Label4.Size = New System.Drawing.Size(239, 30)
         Me.Label4.TabIndex = 21
         Me.Label4.Text = "Received Amount Kshs"
         '
@@ -532,7 +573,7 @@ Partial Class Form1
         Me.txt_BalanceAmount.ForeColor = System.Drawing.Color.OrangeRed
         Me.txt_BalanceAmount.Location = New System.Drawing.Point(174, 84)
         Me.txt_BalanceAmount.Name = "txt_BalanceAmount"
-        Me.txt_BalanceAmount.Size = New System.Drawing.Size(168, 28)
+        Me.txt_BalanceAmount.Size = New System.Drawing.Size(168, 42)
         Me.txt_BalanceAmount.TabIndex = 20
         Me.txt_BalanceAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -544,7 +585,7 @@ Partial Class Form1
         Me.txt_receivedAmount.ForeColor = System.Drawing.Color.DarkOrange
         Me.txt_receivedAmount.Location = New System.Drawing.Point(174, 49)
         Me.txt_receivedAmount.Name = "txt_receivedAmount"
-        Me.txt_receivedAmount.Size = New System.Drawing.Size(168, 28)
+        Me.txt_receivedAmount.Size = New System.Drawing.Size(168, 42)
         Me.txt_receivedAmount.TabIndex = 19
         Me.txt_receivedAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -555,7 +596,7 @@ Partial Class Form1
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(190, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 20)
+        Me.Label1.Size = New System.Drawing.Size(138, 30)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Grand Total :"
         '
@@ -566,7 +607,7 @@ Partial Class Form1
         Me.lbl_GrandTotal.ForeColor = System.Drawing.Color.White
         Me.lbl_GrandTotal.Location = New System.Drawing.Point(292, 12)
         Me.lbl_GrandTotal.Name = "lbl_GrandTotal"
-        Me.lbl_GrandTotal.Size = New System.Drawing.Size(41, 20)
+        Me.lbl_GrandTotal.Size = New System.Drawing.Size(63, 31)
         Me.lbl_GrandTotal.TabIndex = 6
         Me.lbl_GrandTotal.Text = "0.00"
         '
@@ -577,7 +618,7 @@ Partial Class Form1
         Me.lbl_TotalPrice.ForeColor = System.Drawing.Color.White
         Me.lbl_TotalPrice.Location = New System.Drawing.Point(20, 12)
         Me.lbl_TotalPrice.Name = "lbl_TotalPrice"
-        Me.lbl_TotalPrice.Size = New System.Drawing.Size(101, 20)
+        Me.lbl_TotalPrice.Size = New System.Drawing.Size(146, 30)
         Me.lbl_TotalPrice.TabIndex = 5
         Me.lbl_TotalPrice.Text = "No of Foods :"
         '
@@ -588,7 +629,7 @@ Partial Class Form1
         Me.lbl_noOfProducts.ForeColor = System.Drawing.Color.White
         Me.lbl_noOfProducts.Location = New System.Drawing.Point(119, 12)
         Me.lbl_noOfProducts.Name = "lbl_noOfProducts"
-        Me.lbl_noOfProducts.Size = New System.Drawing.Size(41, 20)
+        Me.lbl_noOfProducts.Size = New System.Drawing.Size(63, 31)
         Me.lbl_noOfProducts.TabIndex = 4
         Me.lbl_noOfProducts.Text = "0.00"
         '
@@ -596,43 +637,9 @@ Partial Class Form1
         '
         Me.Timer1.Enabled = True
         '
-        'lbl_time
-        '
-        Me.lbl_time.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_time.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_time.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(8, Byte), Integer))
-        Me.lbl_time.Location = New System.Drawing.Point(1057, 0)
-        Me.lbl_time.Name = "lbl_time"
-        Me.lbl_time.Size = New System.Drawing.Size(251, 31)
-        Me.lbl_time.TabIndex = 19
-        Me.lbl_time.Text = "00.00"
-        Me.lbl_time.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lbl_date1
-        '
-        Me.lbl_date1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_date1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_date1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(254, Byte), Integer))
-        Me.lbl_date1.Location = New System.Drawing.Point(1053, 25)
-        Me.lbl_date1.Name = "lbl_date1"
-        Me.lbl_date1.Size = New System.Drawing.Size(251, 31)
-        Me.lbl_date1.TabIndex = 23
-        Me.lbl_date1.Text = "00.00"
-        Me.lbl_date1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(86, 48)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(28, 22)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 24
-        Me.PictureBox1.TabStop = False
-        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1316, 749)
@@ -654,11 +661,11 @@ Partial Class Form1
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

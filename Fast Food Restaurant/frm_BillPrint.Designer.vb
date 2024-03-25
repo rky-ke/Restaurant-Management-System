@@ -74,7 +74,7 @@ Partial Class frm_BillPrint
         'ReportViewer1
         '
         Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Fast_Food_Restaurant.Report1.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Delight_Restaurant.Report1.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 46)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(742, 537)
@@ -82,7 +82,7 @@ Partial Class frm_BillPrint
         '
         'PictureBox4
         '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        ' Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(12, 8)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(31, 26)

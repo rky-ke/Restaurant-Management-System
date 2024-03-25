@@ -8,12 +8,12 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Fast Food Restaurant")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("Fast Food Restaurant")> 
-<Assembly: AssemblyCopyright("Copyright ©  2022")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("Delights Restaurant")>
+<Assembly: AssemblyDescription("Restaurant Managent System for a small scall restaurant business")>
+<Assembly: AssemblyCompany("Delights")>
+<Assembly: AssemblyProduct("Delights Restaurant")>
+<Assembly: AssemblyCopyright("Copyright ©  2024")>
+<Assembly: AssemblyTrademark("Sweet Halime")>
 
 <Assembly: ComVisible(False)>
 
